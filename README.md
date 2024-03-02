@@ -1,1 +1,0 @@
-# kmga-service
