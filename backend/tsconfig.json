@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@prisma/*": ["src/prisma/*"],
+      "@user/*": ["src/user/*"],
+      "@common/*": ["libs/common/src/*"],
+      "@auth/*": ["src/auth/*"],
+      "@mail/*": ["src/mail/*"],
+      "@statistics/*": ["src/statistics/*"],
+      "@quiz/*": ["src/quiz/*"],
+      "@question/*": ["src/question/*"],
+      "@session/*": ["src/session/*"]
+    }
+  }
+}

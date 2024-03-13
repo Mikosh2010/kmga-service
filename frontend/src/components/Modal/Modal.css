@@ -1,0 +1,151 @@
+@keyframes modalExampleFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade-out animation */
+@keyframes modalExampleFadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes modalExampleWrapperFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-5%);
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade-out animation */
+@keyframes modalExampleWrapperFadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-5%);
+    }
+}
+
+
+.modal.modal-open {
+    animation: modalExampleFadeIn 0.3s ease-in-out forwards;
+    pointer-events: auto;
+    /* Apply fade-in animation when modal is open */
+    animation-direction: alternate;
+    /* Add this line */
+}
+
+.modal.modal-closing-animation {
+    animation: modalExampleFadeOut 0.3s ease-in-out forwards;
+    /* Apply fade-out animation when modal is closed */
+    animation-direction: alternate;
+    /* Add this line */
+}
+
+.modal__wrapper.modal-open {
+    animation: modalExampleWrapperFadeIn 0.5s ease-in-out forwards;
+    pointer-events: auto;
+    /* Apply fade-in animation when modal is open */
+    animation-direction: alternate;
+    /* Add this line */
+}
+
+.modal__wrapper.modal-closing-animation {
+    animation: modalExampleWrapperFadeOut 0.5s ease-in-out forwards;
+    /* Apply fade-out animation when modal is closed */
+    animation-direction: alternate;
+    /* Add this line */
+}
+
+/* Modal styling with animations */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+
+    /* Keep the final state after animation */
+}
+
+.modal__wrapper {
+    padding: 36px 44px;
+    border-radius: 15px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: .5s;
+}
+
+.modal__close {
+    position: absolute;
+    background: none;
+    padding: 0;
+    font-size: 32px;
+    right: 15px;
+    top: 1px;
+    cursor: pointer;
+}
+
+.modal__head {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.modal__title {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -3px;
+    font-family: var(--inter-font);
+}
+
+.modal__subtitle {
+    font-size: 15px;
+    color: var(--se-light-grey);
+    font-weight: 500;
+}
+
+.modal__content {
+    width: 100%;
+    text-align: center;
+}
+
+.modal__button {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 19px;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    margin-top: 40px;
+    background: var(--se-life-green);
+    cursor: pointer;
+}

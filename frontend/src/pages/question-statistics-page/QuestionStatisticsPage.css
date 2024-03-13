@@ -1,0 +1,39 @@
+.question-stat__nav {
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.question-stat__nav button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 50px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.question-stat__nav button.selected, .question-stat__nav button:hover {
+  background: #000000d0;
+  color: #fff;
+}
+
+.question-stat .select-custom {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.question-stat__chart {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.question-stat__name {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,58 @@
+.dashboard {
+    padding-bottom: 40px;
+    height: auto !important;
+}
+
+.dashboard__action {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+.dashboard__button {
+    font-weight: 600;
+    font-size: 20px;
+    background: var(--se-life-green);
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.dashboard__button:hover {
+    background: #3abe52;
+}
+
+.select-custom {
+    width: 300px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 13px;
+    border: 2px solid #F1F1F1;
+    color: var(--se-light-grey);
+    appearance: none; 
+    background-color: white;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l6 6 6-6" stroke="%23999" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 14px 8px;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    position: relative;
+}
+
+.select-custom:focus {
+    outline: none;
+    border-color: var(--se-life-green);
+}
+
+.select-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dashboard__content {
+    display: grid;
+    grid-gap: 35px;
+}

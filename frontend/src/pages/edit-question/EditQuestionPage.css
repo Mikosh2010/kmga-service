@@ -1,0 +1,10 @@
+
+
+.edit-question input[type="text"] {
+    width: 100%;
+}
+
+.edit-question .ui-field__label, .edit-question .form-label {
+    font-size: 18px;
+    font-weight: 600;
+}
